@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    .container {height : 100vh; margin: 0 auto;}
+       .header {height : 10vh; background-color:#fff9e7;}
+       .title {height : 15vh; width: 100%; background-color:#fff9e7; display: table;}
+        h1{ 
+            font-family: 'East Sea Dokdo', cursive;
+            font-size: 50px;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            width: 100%;
+            }
+       .nav {
+           height : 10vh;
+           width: 100%;
+           background-color :#fff9e7;
+           display: table;
+           } 
+           .txt_nav{
+            font-family: 'GmarketSansLight';
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            width:100%
+           }
+       .center {height : 80vh; overflow : hidden;}
+       .pic {
+           height : 55vh;
+           background-color:#fff9e7; 
+           float: left; 
+           width:45%; }
+           .pic_kim{text-align: center; vertical-align: middle;}
+       .mention {
+           height : 55vh;
+           background-color:#fff9e7; 
+           float: right; 
+           width: 55%;
+           position: relative; 
+          }
+        .txt_men { 
+            width: 80%;
+            font-family: 'GmarketSansLight';
+           }
+       .footer {height : 10vh; background-color : #fff9e7; position:relative}
+       .badge {
+           background-color: #6f3826;
+           width : 7vh;
+           height: 7vh;
+           box-sizing: border-box;
+           padding-top: 0.5vh;
+           padding-left: 0.5vh;
+           line-height: 2vh;
+           font-size: 10px;
+           font-weight: bold;
+           color: white;
+           position: relative;
+           top: 1.5vh;
+           left: 1.5vh;
+       }

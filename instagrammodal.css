@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    margin: 0 auto;
+    background-color:#fff9e7;
+    overflow: hidden;
+}
+
+header{
+    height: 30vh;
+}
+
+h1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 29px;
+    line-height: 23px;
+    padding: 30px;
+    margin: 0;
+}
+
+p{
+    font-family: 'GmarketSansLight';
+    font-size: 14px;
+    margin: 0 30px;
+    }
+
+.insta{
+    height: 60vh;
+    position: relative;
+}
+
+.pro{
+    height: 18vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.thum{
+    width: 13vh;
+    height: 13vh;
+    background-image: url("insta/1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.p{
+    padding: 5px;
+}
+
+.pnum{
+    font-family: 'NEXON Lv2 Gothic Bold';
+    font-size: 15px;
+    text-align: center;
+}
+
+.ptit{
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 12px;
+    text-align: center;
+}
+
+.modal{
+    height: 42vh;
+}
+
+ul.list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 5px;
+    gap: 5px;
+}
+
+.list img{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.7);
+    animation: modal-effect 0.8s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.modal-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.modal-inner{
+    background-color: white;
+    width: 80%;
+    height: 70vh;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    animation: modal-popup 0.8s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.top-info{
+    height: 10%;
+    display: grid;
+    position: relative;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 3fr
+}
+
+.top-info .thum{
+    height: 6vh;
+    width: 6vh;
+    background-position: inherit;
+}
+
+.id{
+    font-family: 'NEXON Lv2 Gothic Bold';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.ppp{
+    background-image: url("insta/ppp.gif");
+    height: 6vh;
+    width: 6vh;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+.thumb{
+    height: 60%;
+}
+
+.bottom-info{
+    height: 30%;
+    position: relative;
+}
+
+.iconzip{
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.hea{
+    background-image: url("insta/hea.gif");
+    background-position: center;
+    background-size: contain;
+    height: 3vh;
+    width: 3vh;
+}
+
+.com{
+    background-image: url("insta/com.gif");
+    background-position: center;
+    background-size: cover;
+    height: 3vh;
+    width: 3vh;
+}
+
+.likes{
+    font-family: 'NEXON Lv2 Gothic Bold';
+    font-size: 12px;
+    color: #ED4956;
+    padding: 0 5px;
+}
+
+
+
+ button {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.detail{
+    width: 100%;
+    height: 100%;
+}
+
+.txt_area{
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 12px;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.date{
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 10px;
+    padding: 0;
+    margin-left: 5px;
+    color: gainsboro;
+    position: relative;
+    top:12px;
+}

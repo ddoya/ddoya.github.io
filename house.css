@@ -1,0 +1,18 @@
+
+header{
+    height: 30vh;
+}
+
+h1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 29px;
+    line-height: 23px;
+    padding: 30px;
+    margin: 0;
+}
+
+p{
+    font-family: 'GmarketSansLight';
+    font-size: 14px;
+    margin: 0 30px;
+    }
