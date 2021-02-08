@@ -1,60 +1,87 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-body{
-    height: 100vh;
-    margin: 0 auto;
+.piczone{
+    height: 40vh;
     overflow: hidden;
+    object-position: center;
+    position: relative;
+    
 }
 
-header{
-    height: 50vh;
+.piczone img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
-h1{
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 29px;
-    line-height: 23px;
-    padding: 30px;
+
+.piczone .front{
+    animation: front 5s infinite;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.textzone{
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+.nameinfo{
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 14px;
     margin: 0;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.nameinfo div{
+    display: inline-block;
+    padding: 4px;
+}
+
+.nameinfo .word{
+    font-family: 'NEXON Lv2 Gothic Bold';
+    font-size: 16px;
+}
+
+.nameinfo .pron , .partofspeech{
+    color: gray;
 }
 
 p{
-    font-family: 'GmarketSansMedium';
-    font-size: 14px;
-    margin: 0 30px;
-    font-weight: 200;
+    margin: 0;
+    padding-top: 4px;
+    box-sizing: border-box;
+    font-family: 'NEXON Lv2 Gothic';
+}
+
+
+@keyframes front {
+    0%{
+        opacity: 0;
     }
 
-.pic {
-        height: 40vh;
-        background: linear-gradient(60deg, #000002, #faf1d6, #6f3826, #ffffff);
-        background-size: 800% 800%;
-        -webkit-animation: AnimationName 10s ease infinite;
-        -moz-animation: AnimationName 10s ease infinite;
-        -o-animation: AnimationName 10s ease infinite;
-        animation: AnimationName 10s ease infinite;
+    100%{
+        opacity: 1;
     }
-    @-webkit-keyframes AnimationName {
-        0%{background-position:11% 0%}
-        50%{background-position:90% 100%}
-        100%{background-position:11% 0%}
-    }
-    @-moz-keyframes AnimationName {
-        0%{background-position:11% 0%}
-        50%{background-position:90% 100%}
-        100%{background-position:11% 0%}
-    }
-    @-o-keyframes AnimationName {
-        0%{background-position:11% 0%}
-        50%{background-position:90% 100%}
-        100%{background-position:11% 0%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:11% 0%}
-        50%{background-position:90% 100%}
-        100%{background-position:11% 0%}
-    }
-
-.cat img{
-    height: 40vh;
-    width: 100%;
-    object-fit: cover;
 }

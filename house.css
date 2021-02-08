@@ -12,7 +12,67 @@ h1{
 }
 
 p{
-    font-family: 'GmarketSansLight';
-    font-size: 14px;
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
     margin: 0 30px;
     }
+
+.maintxt{
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+span{
+    font-weight: bold;
+    font-size: 20px;
+    color:red;
+    background-image: gradient(92deg, #000000, #ffffff);
+    clip: text;
+    margin: 30px;
+    animation: hue 1s infinite linear;
+}
+
+@keyframes hue {
+    from{
+        -webkit-filter: hue-rotate(0deg);
+    }
+    to{
+        -webkit-filter: hue-rotate(-360deg);
+        }
+    }
+
+.comment{
+    padding-left: 30px;
+    font-family: 'GmarketSansMedium';
+    font-size: 12px;
+    color: gray;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%)}
+
+.btn-grad {
+   margin: 8px 28px 0 0 ;
+   padding: 4px 12px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   float: right;
+   border: none;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+ 

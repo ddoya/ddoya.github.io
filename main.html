@@ -1,45 +1,151 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>main</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="./main copy.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
 </head>
 
 
-<bddy>
+<body>
 
-<div class="container">
-    <div class="title">
-        <h1 class="kimboogack">
-            Kim<br> boo<br> gack
-        </h1>
-        <p>
-            안녕하세요 김부각입니다. <br>제 집에 놀러오신거 환영해! <br>집들이 선물은 a)츄르 b)사료 c)사랑 <br>중 택1해서 주도록!
-        </p>
-     </div>
+	<div class="container">
+		<div class="title">
+			<h1 class="kimboogack">
+				Kim<br> boo<br> gack
+			</h1>
+			<p>
+				안녕하세요 김부각입니다. <br>제 집에 놀러오신거 환영해! <br>집들이 선물은 a)츄르 b)사료 c)사랑 <br>중 택1해서 주도록!
+			</p>
+		</div>
 
-     <ul class="swiper">
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-     </ul>
+		<div class="section">
+			<input type="radio" name="slide" id="slide01" title="name" checked>
+			<input type="radio" name="slide" id="slide02" title="name">
+			<input type="radio" name="slide" id="slide03" title="name">
+			<input type="radio" name="slide" id="slide04" title="name">
 
-    <ul class="mention">
-        <div class="num">1</div>
-        <div class="text_area">
-            <div class="dsctt"></div>
-            <div class="dsc"></div>
-        </div>
-    </ul>
-</div>
 
-  
-</bddy>
+			<div class="slidewrap">
+
+				<!-- 페이징 -->
+				<ul class="slide-pagelist">
+					<li><label for="slide01"><img src="main1.gif"></label></li>
+					<li><label for="slide02"><img src="main2.gif"></label></li>
+					<li><label for="slide03"><img src="main3.gif"></label></li>
+					<li><label for="slide04"><img src="main4.gif"></label></li>
+				</ul>
+
+				<ul class="slidelist">
+					<!-- 슬라이드 영역 -->
+					<li class="slideitem">
+						<a>
+							<div class="textbox">
+								<h3>KimBooGack's <br>Name</h3>
+								<p>김부각의 이름이 왜 김부각인지 알고 계십니까? <BR> 김부각 이름풀이를 제공합니다.</p>
+							</div>
+							<img src="img/slide.gif">
+							<a href="hername.html" class=herbt>
+								<div class="shortcut"> >> CLICK ME! >> </div>
+							</a>
+						</a>
+					</li>
+					<li class="slideitem">
+						<a>
+
+							<div class="textbox">
+								<h3>KimBooGack's <br>Daily look</h3>
+								<p>
+									탄소 중립적이며 직관적인 패션.<BR>
+									명랑한 시대로 나아가기 전 찾아온 겨울,
+									<BR>차가운 공기가 불확실한 요동을<BR>잠재우고 감각을 일깨운다.
+								</p>
+							</div>
+							<img src="img/slide.gif">
+							<a href="daily.html" class=herbt>
+								<div class="shortcut"> >> CLICK ME! >> </div>
+							</a>
+						</a>
+					</li>
+					<li class="slideitem">
+						<a>
+
+							<div class="textbox">
+								<h3 id="toolarge">KimBooGack's <br>Home Sweet Home</h3>
+								<p>내일의 집.
+									<BR>누구나 예쁜 집에 살 수 있다는 가치를
+									<BR>김부각이 함께 만들어갑니다.
+									<BR>따라따라따~
+								</p>
+							</div>
+							<img src="img/slide.gif">
+							<a href="house.html" class=herbt>
+								<div class="shortcut"> >> CLICK ME! >> </div>
+							</a>
+						</a>
+					</li>
+					<li class="slideitem">
+						<a>
+
+							<div class="textbox">
+								<h3>KimBooGack's <br>instagram</h3>
+								<p>문제야<BR>문제<BR>온 세상 속에 똑같은 사랑노래가.</p>
+							</div>
+							<img src="img/slide.gif">
+							<a href="instagram.html" class=herbt>
+								<div class="shortcut"> >> CLICK ME! >> </div>
+							</a>
+						</a>
+					</li>
+
+					<!-- 좌,우 슬라이드 버튼 -->
+					<div class="slide-control">
+						<div>
+							<label for="slide03" class="left"></label>
+							<label for="slide02" class="right"></label>
+						</div>
+						<div>
+							<label for="slide01" class="left"></label>
+							<label for="slide03" class="right"></label>
+						</div>
+						<div>
+							<label for="slide02" class="left"></label>
+							<label for="slide04" class="right"></label>
+						</div>
+						<div>
+							<label for="slide03" class="left"></label>
+							<label for="slide01" class="right"></label>
+						</div>
+
+					</div>
+
+				</ul>
+
+			</div>
+
+
+		</div>
+
+		<div class="boxbody">
+			<div class='box'>
+				<div class='wave -one'></div>
+				<div class='wave -two'></div>
+				<div class='wave -three'></div>
+				<div class="boxtext1">
+					<div class='title'>KimBooGack's <br>Name</div>
+					<div class="des">김부각의 이름이 왜 김부각인지 알고 계십니까? <BR> 김부각 이름풀이를 제공합니다.</div>
+
+				</div>
+			</div>
+
+		</div container>
+		</bddy>
+
 </html>

@@ -1,0 +1,60 @@
+
+body{
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header{
+    height: 50vh;
+}
+h1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 29px;
+    line-height: 23px;
+    padding: 30px;
+    margin: 0;
+}
+
+p{
+    font-family: 'GmarketSansMedium';
+    font-size: 14px;
+    margin: 0 30px;
+    font-weight: 200;
+    }
+
+.pic {
+        height: 40vh;
+        background: linear-gradient(60deg, #000002, #faf1d6, #6f3826, #ffffff);
+        background-size: 800% 800%;
+        -webkit-animation: AnimationName 10s ease infinite;
+        -moz-animation: AnimationName 10s ease infinite;
+        -o-animation: AnimationName 10s ease infinite;
+        animation: AnimationName 10s ease infinite;
+    }
+    @-webkit-keyframes AnimationName {
+        0%{background-position:11% 0%}
+        50%{background-position:90% 100%}
+        100%{background-position:11% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:11% 0%}
+        50%{background-position:90% 100%}
+        100%{background-position:11% 0%}
+    }
+    @-o-keyframes AnimationName {
+        0%{background-position:11% 0%}
+        50%{background-position:90% 100%}
+        100%{background-position:11% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:11% 0%}
+        50%{background-position:90% 100%}
+        100%{background-position:11% 0%}
+    }
+
+.cat img{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
